@@ -14,15 +14,29 @@
 2. exécutez la commande $git config --global user.name "comptegithub"
 3. exécutez la commande $git config --global user.mail "emailassociéaucomptegithub"
 4. Connectez vous sur GitHub avec votre compte utilisateur
+
 5. créez un nouveau repository "New repository", donner lui un nom (désigné par la suite par tutorialgithub" : le mettre en Public et une initialisation avec un README
+=> c'est le depot distant
 
 3ème partie : Transférer un repertoire de votre PC sur le repository en ligne sur GitHub
 
 1. Se placer dans la console Git Bash
 2. exécutez la commande $cd chemindurepertoireàgéreravecgit (ici tutogit)
+
 3. exécutez la commande $git init (création de .git)
-4. git add -all
+=> initialise/crée un nouveau dépot Git
+
+4. git add --all
+=> ajoute au gestionnaire de git la totalité des fichiers
+
 5. git remote add tutogit https://github.com/comptegithub/tutorialgithub.git
+=> relie le depot local au depot distant
+
 6. git commit -m "first commit"
+=> valide les changements sur le depot local
+
 7. git pull tutogit master
+=> récupère et fusionne les changements du depot distant
+
 8. git push tutogit master
+=> envoi de la derniere version validée du depot local vers le depot distant
